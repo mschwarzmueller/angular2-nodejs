@@ -1,13 +1,9 @@
-import {Component} from 'angular2/core';
-import {MessagesComponent} from "./messages/messages.component";
+import { Component } from '@angular/core';
+
 @Component({
+    moduleId: module.id,
     selector: 'my-app',
-    template: ` 
-        <div class="container">
-            <my-messages></my-messages>
-        </div>
-    `,
-    directives: [MessagesComponent]
+    templateUrl: 'app.template.html'
 })
 export class AppComponent {
     
